@@ -75,9 +75,9 @@ PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 
 # Auto Delete , Filter & Auto Filter
-AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
-AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
-MAUTO_DELETE = is_enabled((environ.get('MAUTO_DELETE', "True")), True)
+AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "False")), False)
+AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "False")), False)
+MAUTO_DELETE = is_enabled((environ.get('MAUTO_DELETE', "False")), False)
 
 # Delete Time
 DELETE_TIME = int(environ.get('DELETE_TIME', 300))
